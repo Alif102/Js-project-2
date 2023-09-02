@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <section class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title text-purple-800">Discuss the scope of var, let, and const.</h2>
+              <p class="text-gray-800"> 1. var declarations are globally scoped or function scoped while let and const are block scoped. <br>
+                2.var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. <br>
+               3. They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized. <br>
+               4. While var and let can be declared without being initialized, const must be initialized during declaration.
+                
+               </p>
+              
+            </div>
+          </div>
+
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title text-purple-500">Tell us the use cases of null and undefine  </h2>
+              <p class="text-purple-950">
+                Null is an object in JavaScript and represents primitive data types. A null value in JavaScript is used for referring absence of any object value and if any function or variable returns null, then we can infer that the object could not be created.
+            <br>
+            Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or a blank value. The typeof() operator returns undefined for an undefined variable. The typeof() operator returns the type as an object for a variable whose value is assigned as null.
+        </p>
+             
+              
+            </div>
+          </div>
+
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title text-purple-600">What do you mean by REST API?</h2>
+              <p class="text-purple-950">
+               
+The HTTP protocol used by REST APIs allows for platforms and systems written in different programming languages to interact with one another. For example, a client application written in C# can interact with an API server written in Java. <br> <br>
+RESTful API is an interface that two computer systems use to exchange information securely over the internet. Most business applications have to communicate with other internal and third-party applications to perform various tasks.
+
+
+              </p>
+              
+            </div>
+          </div>
+    </section>
+
+    <section class="lg:flex lg:justify-center">
+        <a class="btn mt-24 mb-10 w-72 bg-purple-950 text-white" onclick="window.location.href = 'index.html'">Go Home</a>
+    </section>
+    
+</body>
+</html>

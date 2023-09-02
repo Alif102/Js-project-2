@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body> 
+
+     <header class=" container mx-auto mt-10 mb-9">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class=" flex normal-case text-xl"><span><img class="w-48" src="./assets/Logo.png" alt="iconn"></span> </a>
+        </div>
+        <div class="navbar-center">
+          <button onclick="sortViwes()" class="btn bg-gray-200 btn-ghost normal-case text-xl">Sort By View</button>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#FF1F3D] text-white" onclick="window.location.href = 'blog.html'">Blog</a>
+
+        </div>
+      </div>
+      <hr class="font-semibold mt-5"/>
+    </header>
+
+    <section>
+        <div id="tab-container" class="flex justify-center gap-5 font-semibold text-2xl mt-7">
+            
+        </div>
+    </section> 
+
+    <section class="container mx-auto">
+      <div id="others-container"></div>
+      <div id="card-container" class="mt-8 mb-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
+      
+        </div>
+        
+    </section>
+    
+    
+
+
+
+    <script src="./fetch.js"></script>
+</body>
+</html>
+
+<!-- data":
+[
+{"category_id":"1001",
+"thumbnail":"https://i.ibb.co/L1b6xSq/shape.jpg",
+"title":"Shape of You",
+"authors":
+[
+{"profile_picture":"https://i.ibb.co/D9wWRM6/olivia.jpg",
+"profile_name":"Olivia Mitchell","verified":""}],
+"others":{"views":"100K","posted_date":"16278"}}, -->
+
+<!-- 
+<div  class="card w-56 bg-base-100 shadow-xl">
+  <figure><img src=${hero?.thumbnail} alt="Shoes" /></figure>
+      
+      <div class="card-body">
+        <h2 class="card-title">
+          Shoes!
+          <div class="badge badge-secondary">NEW</div>
+        </h2>
+       
+        <img src=${hero.authors[0].profile_picture} alt="Shoes" />
+        <p>${hero.authors[0].profile_name}</p>
+        <p>${hero.title}</p>
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">${hero.others.views}</div> 
+          <div class="badge badge-outline">Products</div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="card w-96 bg-base-100 shadow-xl">
+      <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+      <div class="card-body">
+    <div class="flex">
+          <div class="avatar">
+      <div class="w-24 rounded-full">
+        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="immgg"/>
+      </div>
+    </div>
+    <div>
+      <h2 class="card-title">alif silvia</h2>
+      <div class="flex items-center gap-4">
+        <h2>alif</h2>
+      
+      <i class="fa fa-check-circle text-sky-500" aria-hidden="true"></i>
+      </div>
+    <h2 class="text-gray-400 font-semibold">alif silvia</h2>
+    </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div>
+      </div> </div> -->
+
+      <!-- <div class="bg-[black]"> ${hero.others?.posted_date?
+         `
+        <div class="">${Math.round((Math.round(hero.others.posted_date/60))/60)}hr ${(Math.round(hero.others.posted_date/60))%60}min ago
+
+        </div>` : ''} 
+    </div>  -->
+    <!-- <div> ${hero.others?.posted_date?
+      `
+     <div class="">${Math.round((Math.round(hero.others.posted_date/60))/60)}hr ${(Math.round(hero.others.posted_date/60))%60}min ago
+  
+     </div>` : ''} 
+  </div>  -->
